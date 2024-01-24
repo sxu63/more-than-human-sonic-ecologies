@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 323.500004291534424, 529.500000059604645, 114.666665613651276, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "stepped signal"
 				}
 
@@ -214,7 +213,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 659.0, 376.833343386650085, 150.0, 48.0 ],
+					"patching_rect" : [ 659.0, 376.833343386650085, 151.0, 48.0 ],
 					"text" : "live.scope~ shows by DEFAULT between -1 and 1"
 				}
 
@@ -345,7 +344,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 1837.0, 119.0, 830.0, 610.0 ],
+						"rect" : [ 1688.0, 119.0, 830.0, 610.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -375,6 +374,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 333.0, 386.0, 29.5, 22.0 ],
+									"text" : "||"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-28",
 									"linecount" : 3,
 									"maxclass" : "newobj",
@@ -394,7 +405,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 378.283346235752106, 154.533338069915771, 150.0, 62.0 ],
-									"presentation_linecount" : 4,
 									"text" : "convert to a stepped signal. [floor] operator round down to nearest whole number (integer)"
 								}
 
@@ -581,7 +591,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.33333295583725, 43.000003576278687, 184.000001013278961, 75.0 ],
+									"patching_rect" : [ 37.33333295583725, 43.000003576278687, 187.0, 75.0 ],
 									"text" : "cycle is a sinusoidal oscillator (or sine tone generator ). the first argument (or number following the name of the operator is its frequency in hertz "
 								}
 
@@ -791,7 +801,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-1", 2 ]
 				}
 
@@ -807,7 +817,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1", 2 ]
 				}
 
